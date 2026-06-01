@@ -31,4 +31,4 @@
 
 //
 let str = "12365866";
-console.log(str.slice(7,1));9
+console.log(str.slice(7,1));
