@@ -2,10 +2,20 @@ h1{
     background-color: blue;
 }
 body{
-    background-color: pink;
+    background-color: rgb(192, 228, 255);
 }
 
 button{
     background-color: blue;
     color: white ;
+}
+
+
+#box {
+    height : 200px;
+    width : 200px;   
+    background-color: red;
+    margin: 20px;
+    color: white;
+    border-radius: 20px;
 }

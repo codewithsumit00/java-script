@@ -1,10 +1,7 @@
-// console.log("hello DOM");
-// alert("first check this page ");
+let div = document.querySelector("#box");
+console.log(div);
+let id = div.getAttribute("id");
+console.log(id);
 
-// // querySelector
-// let element = document.querySelector("h1");
-// console.log (element);
-
-//DOM manipulatio  
-div.innerHTML = "<h1>hello DOM</h1>";
-console.dir(documetn.body.firstChild);
+let DOM = documet.querySelector("p");
+console.log(DOM.setAttribute("class","DOM"));
