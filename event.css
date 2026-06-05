@@ -1,7 +1,19 @@
-div{
+/* div{
     height : 100;
     color : red;
     background-color : blue ;
     width : 20;
     border : 1px solid black;
+} */
+
+.dark{
+    background-color : black ;
+    color : white;
+
+}
+
+.light {
+    background-color : white ;
+    color: black ;
+
 }

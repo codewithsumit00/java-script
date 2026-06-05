@@ -30,15 +30,22 @@
 // })
 
 let modebtn = document.querySelector("#mode");
-let current = "light";
-modebtn.addEventListener("click",() =>{
-    if (currntmode === "light"){
-        currentmode = "dark";
-        document.querySelector("body").style.backgroundColor = "black ";
+let body = document.querySelector("body");
+let currentmode  = "light";
 
-    }else{
+// ensure theme starts clean
+body.classList.add("light", "mode");
+
+modebtn.addEventListener("click", () => {
+    if (currentmode === "light") {
+        currentmode = "dark";
+        body.classList.remove("light", "mode");
+        body.classList.add("dark", "mode");
+    } else {
         currentmode = "light";
-        document.querySelector("body").style.backgroundColor = "white";
+        body.classList.remove("dark", "mode");
+        body.classList.add("light", "mode");
     }
-    console.log("you are trying to change mode ")
+
+    console.log("current mode: " + currentmode);
 });
