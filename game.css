@@ -49,14 +49,25 @@ body {
     border: none;
 
 }    
-#newbtn{
+#new-btn{
   padding: 1rem;
-    font-size: 1.25rem;
-    background-color: green;
-    color: black ;
-    border-radius: 1rem;
-    border: none;
+  font-size: 1.25rem;
+  background-color: green;
+  color: black ;
+  border-radius: 1rem;
+  border: none;
 }
+
+.box-x{
+  color: black;
+  background-color: rgb(0, 255, 0);
+}
+
+.box-o{
+  color: black;
+  background-color: rgb(255, 215, 0);
+}
+
 #msg{
     color: #ffffc7;
     font-size: 8vmin;
