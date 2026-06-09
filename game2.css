@@ -51,6 +51,22 @@ object-fit: cover;
 }
 
 #user-score
-#comp-score{
+#computer-score{
     font-size: 3rem;
+}
+
+
+
+.msg-container{
+    margin-top: 3rem;
+}
+
+#msg{
+background-color: #081b31;
+color: white;
+font-size: 2rem;
+display: inline;
+padding: 1rem;
+border-radius: 1rem;
+
 }
