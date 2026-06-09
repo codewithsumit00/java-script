@@ -4,16 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock paper Scissors Game</title>
+    <link rel="stylesheet" href="game2.css"> 
 </head>
+
+
+
+
 <body>
 <h1> Rock Paper Scissors</h1>
+
 <div class="choices">
-    <div  class ="choice"> 
-    <img src="paper.png" alt="paper img">
-    <div  class ="choice"> 
-    <img src="rock.png">
+    <div  class="choice" id="rock"> 
+        <img src="rock.png">
+    </div>
+    <div  class="choice" id="paper"> 
+       <img src="paper.png">
+   </div>
+    <div class="choice" id="scissors"> 
+         <img src="scissors (1).png">
+    </div>
 </div>
-</div>
+    
+
+
+
+<div class="score-board"> 
+        <div class ="score">
+       <P id="user-score">0</P>
+       <P> YOU</P>
+        </div>
+         <div class="score">
+       <P id="computer-score">0</P>
+       <P> computer</P>
+        </div>
+     </div>
+
+     <div class="msg-container">
+        <p id="msg">play your move</p>
+     </div>
+<script src="game2.js"></script>
 
 </body>
 </html>
