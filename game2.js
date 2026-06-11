@@ -13,7 +13,11 @@ const playGame = (userChoice) => {
   const computerChoice = genComputerChoice();
 
   if (userChoice === computerChoice) {
-    document.getElementById("msg").textContent = `Tie! ${userChoice} vs ${computerChoice}`;
+    const msgEl = document.getElementById("msg");
+    msgEl.textContent = `Tie! ${userChoice} vs ${computerChoice}`;
+    // Draw: keep background as default (same as h1 color in CSS)
+    msgEl.style.backgroundColor = "#081b31";
+    msgEl.style.color = "white";
     return;
   }
 
@@ -23,14 +27,18 @@ const playGame = (userChoice) => {
     (userChoice === "paper" && computerChoice === "rock") ||
     (userChoice === "scissors" && computerChoice === "paper");
 
+  const msgEl = document.getElementById("msg");
+
   if (userWins) {
     userScore++;
     document.getElementById("user-score").textContent = userScore;
-    document.getElementById("msg").textContent = `You win! ${userChoice} beats ${computerChoice}`;
+    msgEl.textContent = `You win! ${userChoice} beats ${computerChoice}`;
+    msgEl.style.backgroundColor = "green";
   } else {
     comScore++;
     document.getElementById("computer-score").textContent = comScore;
-    document.getElementById("msg").textContent = `You lose! ${computerChoice} beats ${userChoice}`;
+    msgEl.textContent = `You lose! ${computerChoice} beats ${userChoice}`;
+    msgEl.style.backgroundColor = "red";
   }
 };
 
@@ -40,4 +48,3 @@ choices.forEach((choice) => {
     playGame(choiceId);
   });
 });
-
